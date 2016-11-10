@@ -201,16 +201,21 @@ public class RequestBLImp implements RequestBL {
 	 */
 	@Override
 	public boolean validateTime(Calendar startTime, Calendar endTime) throws MyDaoException {
+		int endHour = endTime.get(Calendar.HOUR_OF_DAY);
+		int startHour = startTime.get(Calendar.HOUR_OF_DAY);
+		int endMinutes = endTime.get(Calendar.MINUTE);
+		int startMinutes = startTime.get(Calendar.MINUTE);
+		int difHours = endHour - startHour;
 		if(startTime == null || "".equals(startTime)){
 			throw new MyDaoException("Debe especificar la hora de inicio del prestamo", null);
 		}
 		if(endTime == null || "".equals(endTime)){
 			throw new MyDaoException("Debe especificar la hora de finalizacion del prestamo", null);
 		}
-		if((endTime.get(Calendar.HOUR_OF_DAY) - startTime.get(Calendar.HOUR_OF_DAY)) <= 8){
-			return true;
+		if( difHours  > 8 || (difHours == 8 && endMinutes > startMinutes)){
+			return false;
 		}
-		return false;
+		return true;
 	}
 
 }

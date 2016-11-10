@@ -46,13 +46,15 @@ public class RequestBLImpTest {
 		@SuppressWarnings("deprecation")
 		Date dateRequest = new Date(116, 9, 18);
 		Long id = null;
+		startTime.clear();
 		startTime.set(Calendar.HOUR_OF_DAY, 9);
 		startTime.set(Calendar.MINUTE, 0);
 		endTime.set(Calendar.HOUR_OF_DAY, 14);
 		endTime.set(Calendar.MINUTE, 0);
+		System.out.println(startTime);
 		
 		try{			
-			id = BL.createRequest(dateRequest, startTime, endTime,"pendiente", 2L , "diego");
+			id = BL.createRequest(dateRequest, startTime, endTime,"pendiente", 3L , "andres");
 			assertNotNull(id);
 			Request newRequest = dao.get(id);
 			assertEquals("2016-10-18", newRequest.getDateRequest().toString().substring(0,10));
@@ -135,14 +137,10 @@ public class RequestBLImpTest {
 	@Test
 	public void testSearchRequestStartTime() throws MyDaoException {
 		Calendar startTime = new GregorianCalendar();
+		startTime.clear();
 		startTime.set(Calendar.HOUR_OF_DAY, 9);
 		startTime.set(Calendar.MINUTE, 0);
-		startTime.set(Calendar.YEAR, 0);
-		startTime.set(Calendar.MONTH, 0);
-		Request request = dao.get(13L);
-		System.out.println(request.getStartTime());
-		System.out.println(startTime);
-		System.out.println(request.equals(startTime));
+		Request request = dao.get(14L);
 		List<Request> requests;
 		try{
 			requests = BL.searchRequest(startTime);

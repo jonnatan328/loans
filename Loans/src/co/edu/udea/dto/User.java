@@ -1,7 +1,7 @@
 package co.edu.udea.dto;
 
 /**
- * DTO para la taba users
+ * DTO para la tabla users
  * @author Oscar Zapata, Jonnatan R�os, Diego �lvarez
  *
  */

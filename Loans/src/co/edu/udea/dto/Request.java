@@ -7,7 +7,7 @@ import co.edu.udea.dto.Device;
 import co.edu.udea.dto.User;
 
 /**
- * DTO para la taba requests
+ * DTO para la tabla requests
  * @author Oscar Zapata, Jonnatan R�os, Diego �lvarez
  *
  */

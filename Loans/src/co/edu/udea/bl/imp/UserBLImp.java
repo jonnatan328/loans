@@ -54,7 +54,6 @@ public class UserBLImp implements UserBL {
 	@Override
 	public boolean signIn(String username, String pws) throws MyDaoException {
 		User user;
-		String password;
 		boolean signin;
 		signin = false;
 		try{
@@ -62,16 +61,21 @@ public class UserBLImp implements UserBL {
 				throw new MyDaoException("Debe especificar el username", null);
 			}
 			user = userDao.get(username);
-			if(!user.equals(null)){
-				password = Cifrar.cifrar(pws);
-				if(user.getPassword().equals(password)){
+			if(user==null){
+				return signin;
+			}else{
+				String contrasenaCifrada = Cifrar.cifrar(pws);
+				if(user.getPassword().equals(contrasenaCifrada)){
 					signin = true;
+					return signin;
 				}
-			}
+				else{
+					return signin;
+				}
+			}	
 		}catch(MyDaoException e){
 			throw new MyDaoException(e);
 		}
-		return signin;
 	}
 
 	@Override

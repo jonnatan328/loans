@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18/10/2016 12:12:06 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="co.edu.udea.dto.User" table="users" lazy="false">
+        <id name="username" type="java.lang.String">
+            <column name="USERNAME" precision="0"/>
+            <generator class="assigned" />
+        </id>
+        <property name="names" type="java.lang.String">
+            <column name="NAMES" length="45" not-null="true" />
+        </property>
+        <property name="lastnames" type="java.lang.String">
+            <column name="LASTNAMES" length="45" not-null="true"  />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" length="125" not-null="true" />
+        </property>
+        <many-to-one name="role" class="co.edu.udea.dto.Role" fetch="join">
+            <column name="ROLE" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

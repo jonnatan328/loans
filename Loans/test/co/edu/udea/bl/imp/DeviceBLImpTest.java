@@ -74,7 +74,7 @@ public class DeviceBLImpTest {
 			BL.deleteDevice(id);
 			assertNotNull(id);
 			Device deleteDevice = dao.get(id);
-			assertEquals(false,deleteDevice.getState());
+			assertEquals(true,deleteDevice.getState());
 		}catch(MyDaoException e){
 			fail(e.getMessage());
 		}	

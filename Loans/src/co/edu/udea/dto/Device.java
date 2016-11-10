@@ -1,7 +1,7 @@
 package co.edu.udea.dto;
 
 /**
- * DTO para la taba devices
+ * DTO para la tabla devices
  * @author Oscar Zapata, Jonnatan Ríos, Diego Álvarez
  *
  */

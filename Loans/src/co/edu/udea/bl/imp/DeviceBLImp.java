@@ -77,7 +77,7 @@ public class DeviceBLImp implements DeviceBL {
 			throw new MyDaoException("Debe especificar el dispositivo", null);
 		}
 		device = deviceDao.get(id);
-		device.setState(false);
+		device.setState(true);
 		deviceDao.update(device);
 	}
 

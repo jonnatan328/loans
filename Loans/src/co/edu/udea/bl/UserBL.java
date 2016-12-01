@@ -1,5 +1,6 @@
 package co.edu.udea.bl;
 
+import co.edu.udea.dto.User;
 import co.edu.udea.exception.MyDaoException;
 
 /**
@@ -19,6 +20,13 @@ public interface UserBL {
 	 * @param username, password
 	 * @return true or false
 	 */
-	public boolean signIn(String username, String pws) throws MyDaoException;
+	public boolean signIn(String username, String pws) throws MyDaoException;	
+	/**
+	 * Obtiene un usuario registrado en la base de datos
+	 * @param username
+	 * @return User usuario buscado
+	 */
+	public User getUser(String username) throws MyDaoException;
+	
 	
 }

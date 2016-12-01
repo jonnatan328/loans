@@ -118,4 +118,18 @@ public class UserBLImp implements UserBL {
 		return user.getUsername();
 	}
 
+	@Override
+	public User getUser(String username) throws MyDaoException {
+		User user;
+		try{
+			if(username == null || "".equals(username.trim())){
+				throw new MyDaoException("Debe especificar el username", null);
+			}
+			user = userDao.get(username);
+			return user;
+		}catch(MyDaoException e){
+			throw new MyDaoException(e);
+		}
+	}
+
 }

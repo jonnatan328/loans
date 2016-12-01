@@ -2,7 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v8.0">
 		<attributes>
@@ -10,41 +14,185 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/DigestUtils/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/asm-3.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-core-asl-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-jaxrs-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-mapper-asl-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-xc-1.5.5.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-client-1.4.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-core-1.4.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-json-1.4.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-server-1.4.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jettison-1.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/lib/jsr311-api-1.1.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/jersey-archive-1.4/jersey-archive-1.4/contribs/jersey-spring-1.4.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/antlr-2.7.6.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/commons-collections-3.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/dom4j-1.6.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/hibernate3.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/javassist-3.12.0.GA.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/jta-1.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/slf4j-api-1.6.1.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/LibreriasHibernate/slf4j-log4j12-1.7.2.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/com.springsource.org.aopalliance-1.0.0.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/commons-logging.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-aop-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-beans-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-context-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-core-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-expression-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-jdbc-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-orm-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-test-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-tx-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/Spring4/spring-web-4.1.6.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/jonnatan/UdeA/2016-2/IngenieriaWeb/lib/mysql-connector-java-5.1.22-bin.jar"/>
+	<classpathentry kind="lib" path="/home/daego/Downloads/mysql-connector-java-5.1.22-bin.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/antlr-2.7.6.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/commons-collections-3.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/dom4j-1.6.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/hibernate3.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/hibernate-jpa-2.0-api-1.0.1.Final.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/javassist-3.12.0.GA.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/jta-1.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/slf4j-api-1.6.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/LibreriasHibernate/slf4j-log4j12-1.7.2.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/com.springsource.org.aopalliance-1.0.0.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/commons-logging.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-aop-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-beans-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-context-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-core-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-expression-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-jdbc-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-orm-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-test-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-tx-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/Spring4/spring-web-4.1.6.RELEASE.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/apache-log4j-1.2.17/log4j-1.2.17.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/asm-3.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-core-asl-1.5.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-jaxrs-1.5.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-mapper-asl-1.5.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jackson-xc-1.5.5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-client-1.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-core-1.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-json-1.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jersey-server-1.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jettison-1.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/lib/jsr311-api-1.1.1.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/jersey-archive-1.4/jersey-archive-1.4/contribs/jersey-spring-1.4.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/daego/Downloads/commons-codec-1.10.jar">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.dependency" value="../"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
